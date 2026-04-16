@@ -24,14 +24,15 @@
 
 
 .navbar__logo {
-  font-family: 'Outfit', sans-serif;
-  font-size: 22px;
-  font-weight: 800;
-  letter-spacing: -0.03em;
+  display: flex;
+  align-items: center;
   flex-shrink: 0;
 }
-.navbar__logo-tax { color: var(--primary); }
-.navbar__logo-safar { color: var(--text-primary); }
+.navbar__logo-img {
+  height: 36px;
+  width: auto;
+  object-fit: contain;
+}
 
 
 .navbar__links {

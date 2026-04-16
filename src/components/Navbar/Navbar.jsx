@@ -44,8 +44,7 @@ export default function Navbar() {
       <div className="container navbar__inner">
         {/* Logo */}
         <Link to="/" className="navbar__logo">
-          <span className="navbar__logo-tax">TAX</span>
-          <span className="navbar__logo-safar">safar</span>
+          <img src="https://taxsafar.com/assets/images/logo/login.png" alt="TaxSafar Logo" className="navbar__logo-img" />
         </Link>
 
         {/* Desktop Nav */}

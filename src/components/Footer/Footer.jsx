@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import './Footer.css';
 
 const footerLinks = {
@@ -29,10 +30,9 @@ export default function Footer() {
     <footer className="footer">
       <div className="container footer__inner">
         <div className="footer__brand">
-          <a href="#home" className="footer__logo">
-            <span className="footer__logo-tax">TAX</span>
-            <span className="footer__logo-safar">safar</span>
-          </a>
+          <Link to="/" className="footer__logo">
+            <img src="https://taxsafar.com/assets/images/logo/login.png" alt="TaxSafar Logo" className="footer__logo-img" />
+          </Link>
           <p className="footer__tagline">
             One stop for all your Tax &amp; Compliance needs. Trusted by 10,000+ Indians across the country.
           </p>
