@@ -22,7 +22,7 @@
   gap: 40px;
 }
 
-/* Logo */
+
 .navbar__logo {
   font-family: 'Outfit', sans-serif;
   font-size: 22px;
@@ -33,7 +33,7 @@
 .navbar__logo-tax { color: var(--primary); }
 .navbar__logo-safar { color: var(--text-primary); }
 
-/* Links */
+
 .navbar__links {
   display: flex;
   align-items: center;
@@ -57,7 +57,7 @@
   background: var(--bg-muted);
 }
 
-/* Dropdown item */
+
 .navbar__item { position: relative; }
 .navbar__item--dropdown { display: flex; align-items: center; }
 
@@ -106,7 +106,7 @@
   background: var(--primary);
 }
 
-/* Actions */
+
 .navbar__actions {
   display: flex;
   align-items: center;
@@ -124,7 +124,7 @@
 }
 .navbar__phone:hover { color: var(--primary); }
 
-/* Hamburger */
+
 .navbar__hamburger {
   display: none;
   color: var(--text-primary);
@@ -133,7 +133,7 @@
 }
 .navbar__hamburger:hover { background: var(--bg-muted); }
 
-/* Mobile Menu */
+
 .navbar__mobile {
   background: #fff;
   border-top: 1px solid var(--border);
@@ -156,7 +156,7 @@
   color: var(--primary);
 }
 
-/* Responsive */
+
 @media (max-width: 900px) {
   .navbar__links, .navbar__actions { display: none; }
   .navbar__hamburger { display: flex; margin-left: auto; }

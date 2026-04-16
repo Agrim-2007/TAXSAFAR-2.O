@@ -7,7 +7,7 @@
   align-items: center;
 }
 
-/* Visual */
+
 .about__visual { position: relative; }
 .about__img-wrap {
   position: relative;
@@ -94,7 +94,7 @@
   opacity: 0.85;
 }
 
-/* Text */
+
 .about__text {
   display: flex;
   flex-direction: column;

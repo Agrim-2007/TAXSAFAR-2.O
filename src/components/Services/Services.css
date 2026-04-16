@@ -16,7 +16,6 @@
   gap: 20px;
 }
 
-/* Card */
 .svc-card {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -41,7 +40,6 @@
   background: linear-gradient(135deg, #fff 0%, var(--green-50) 100%);
 }
 
-/* Spotlight glow on hover */
 .svc-card__glow {
   position: absolute;
   inset: 0;
@@ -97,7 +95,7 @@
 }
 .svc-card__cta:hover { gap: 10px; }
 
-/* CTA row */
+
 .services__cta-row {
   margin-top: 56px;
   display: flex;

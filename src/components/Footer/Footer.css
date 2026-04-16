@@ -11,7 +11,7 @@
   padding-bottom: 48px;
 }
 
-/* Brand */
+
 .footer__logo {
   display: inline-block;
   font-family: 'Outfit', sans-serif;
@@ -43,7 +43,7 @@
 }
 .footer__contact-link:hover { color: var(--green-400); }
 
-/* Column */
+
 .footer__col-title {
   font-family: 'Outfit', sans-serif;
   font-size: 13px;

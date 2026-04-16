@@ -7,7 +7,7 @@
   padding-top: var(--nav-height);
 }
 
-/* Background */
+
 .hero-bg {
   position: absolute;
   inset: 0;
@@ -46,7 +46,6 @@
   background-size: 60px 60px;
 }
 
-/* Layout */
 .hero__inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -58,7 +57,7 @@
   padding-bottom: 60px;
 }
 
-/* Text side */
+
 .hero__text {
   display: flex;
   flex-direction: column;
@@ -77,7 +76,7 @@
   max-width: 480px;
 }
 
-/* Tags */
+
 .hero__tags {
   display: flex;
   flex-wrap: wrap;
@@ -100,14 +99,14 @@
   border-color: var(--green-200);
 }
 
-/* CTAs */
+
 .hero__ctas {
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
 }
 
-/* Trust row */
+
 .hero__trust {
   display: flex;
   align-items: center;
@@ -129,7 +128,7 @@
   background: var(--border);
 }
 
-/* Visual side */
+
 .hero__visual {
   perspective: 1000px;
   display: flex;
@@ -138,7 +137,7 @@
   position: relative;
 }
 
-/* Dashboard card */
+
 .hero-dashboard {
   background: #fff;
   border: 1px solid var(--border);
@@ -241,7 +240,7 @@
 }
 .hero-dashboard__check { color: var(--primary); font-weight: 700; }
 
-/* Float cards */
+
 .hero__float-cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -283,7 +282,7 @@
   margin-top: 2px;
 }
 
-/* Responsive */
+
 @media (max-width: 900px) {
   .hero__inner {
     grid-template-columns: 1fr;

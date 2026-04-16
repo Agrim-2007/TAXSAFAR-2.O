@@ -7,7 +7,7 @@
   align-items: start;
 }
 
-/* Info */
+
 .contact__info {
   display: flex;
   flex-direction: column;
@@ -140,7 +140,7 @@
   text-align: center;
 }
 
-/* Success */
+
 .contact__success {
   display: flex;
   flex-direction: column;
