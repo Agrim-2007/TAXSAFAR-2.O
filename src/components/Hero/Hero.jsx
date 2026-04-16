@@ -1,6 +1,7 @@
 import { useRef, useEffect } from 'react';
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import { ArrowRight, Star, Shield, Users, TrendingUp } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import './Hero.css';
 
 const floatingCards = [
@@ -109,13 +110,13 @@ export default function Hero() {
 
           {/* CTAs */}
           <motion.div className="hero__ctas" variants={childVariants}>
-            <a href="#contact" className="btn btn-primary btn-lg">
+            <Link to="/contact" className="btn btn-primary btn-lg">
               Get Free Consultation
               <ArrowRight size={18} />
-            </a>
-            <a href="#services" className="btn btn-ghost btn-lg">
+            </Link>
+            <Link to="/services" className="btn btn-ghost btn-lg">
               Explore Services
-            </a>
+            </Link>
           </motion.div>
 
           {/* Trust row */}

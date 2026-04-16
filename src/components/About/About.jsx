@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { CheckCircle2, Target, Eye } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import './About.css';
 
 const coreServices = [
@@ -88,9 +89,9 @@ export default function About() {
             ))}
           </div>
 
-          <a href="#contact" className="btn btn-primary btn-lg" style={{ alignSelf: 'flex-start', marginTop: '8px' }}>
+          <Link to="/contact" className="btn btn-primary btn-lg" style={{ alignSelf: 'flex-start', marginTop: '8px' }}>
             Talk to an Expert
-          </a>
+          </Link>
         </motion.div>
       </div>
     </section>

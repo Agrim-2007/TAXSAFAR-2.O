@@ -4,6 +4,7 @@ import {
   FileText, AlertTriangle, Building2, MapPin,
   Briefcase, BarChart2, Landmark, TrendingUp, ArrowRight
 } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import './Services.css';
 
 const services = [
@@ -119,9 +120,9 @@ function ServiceCard({ service, index }) {
         <p className="svc-card__sub">{service.sub}</p>
         <p className="svc-card__desc">{service.desc}</p>
       </div>
-      <a href="#contact" className="svc-card__cta" style={{ color: service.color }}>
+      <Link to="/contact" className="svc-card__cta" style={{ color: service.color }}>
         Learn More <ArrowRight size={14} />
-      </a>
+      </Link>
     </motion.div>
   );
 }
@@ -164,9 +165,9 @@ export default function Services() {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.3 }}
         >
-          <a href="#contact" className="btn btn-primary btn-lg">
+          <Link to="/contact" className="btn btn-primary btn-lg">
             Get a Free Consultation <ArrowRight size={18} />
-          </a>
+          </Link>
           <p className="services__cta-note">Response within 2 hours · No charges to consult</p>
         </motion.div>
       </div>

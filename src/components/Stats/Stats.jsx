@@ -1,6 +1,7 @@
 import { useRef, useState, useEffect } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { Shield, Award, Clock, Users } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import './Stats.css';
 
 const stats = [
@@ -56,9 +57,9 @@ export default function Stats() {
             Thousands of individuals, freelancers, and businesses across India
             trust TaxSafar to handle their most important compliance needs.
           </p>
-          <a href="#contact" className="btn btn-primary" style={{ marginTop: '8px', alignSelf: 'flex-start' }}>
+          <Link to="/contact" className="btn btn-primary" style={{ marginTop: '8px', alignSelf: 'flex-start' }}>
             Join Them Today
-          </a>
+          </Link>
         </motion.div>
 
         <div className="stats__grid">
