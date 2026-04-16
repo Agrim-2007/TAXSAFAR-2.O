@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, ChevronDown, Phone } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 const navLinks = [
-  { label: 'Home', href: '#home' },
+  { label: 'Home', href: '/' },
   {
-    label: 'Services', href: '#services',
+    label: 'Services', href: '/services',
     children: [
       'Return Filing (GST, ITR, TDS)',
       'Assessment & Notice Resolution',
@@ -18,8 +19,8 @@ const navLinks = [
       'Financial Planning',
     ],
   },
-  { label: 'About Us', href: '#about' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'About Us', href: '/about' },
+  { label: 'Contact', href: '/contact' },
 ];
 
 export default function Navbar() {
@@ -42,10 +43,10 @@ export default function Navbar() {
     >
       <div className="container navbar__inner">
         {/* Logo */}
-        <a href="#home" className="navbar__logo">
+        <Link to="/" className="navbar__logo">
           <span className="navbar__logo-tax">TAX</span>
           <span className="navbar__logo-safar">safar</span>
-        </a>
+        </Link>
 
         {/* Desktop Nav */}
         <nav className="navbar__links">
@@ -71,19 +72,19 @@ export default function Navbar() {
                       transition={{ duration: 0.2 }}
                     >
                       {link.children.map((item) => (
-                        <a key={item} href="#services" className="navbar__dropdown-item">
+                        <Link key={item} to="/services" className="navbar__dropdown-item">
                           <span className="navbar__dropdown-dot" />
                           {item}
-                        </a>
+                        </Link>
                       ))}
                     </motion.div>
                   )}
                 </AnimatePresence>
               </div>
             ) : (
-              <a key={link.label} href={link.href} className="navbar__link">
+              <Link key={link.label} to={link.href} className="navbar__link">
                 {link.label}
-              </a>
+              </Link>
             )
           )}
         </nav>
@@ -94,7 +95,7 @@ export default function Navbar() {
             <Phone size={14} />
             +91 97848 18899
           </a>
-          <a href="#contact" className="btn btn-primary btn-sm">Get Started</a>
+          <Link to="/contact" className="btn btn-primary btn-sm">Get Started</Link>
         </div>
 
         {/* Mobile hamburger */}
@@ -118,18 +119,18 @@ export default function Navbar() {
             transition={{ duration: 0.3 }}
           >
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.label}
-                href={link.href}
+                to={link.href}
                 className="navbar__mobile-link"
                 onClick={() => setMobileOpen(false)}
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
-            <a href="#contact" className="btn btn-primary" onClick={() => setMobileOpen(false)}>
+            <Link to="/contact" className="btn btn-primary" onClick={() => setMobileOpen(false)}>
               Get Started Free
-            </a>
+            </Link>
           </motion.div>
         )}
       </AnimatePresence>
