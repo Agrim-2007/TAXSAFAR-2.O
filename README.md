@@ -2,7 +2,7 @@
 
 > A premium, modern redesign of [TaxSafar](https://taxsafar.com) — India's all-in-one Tax & Compliance platform.
 
-![TaxSafar 2.0 Preview](./docs/hero-preview.png)
+![TaxSafar 2.0 Preview](./taxsafarPreview.png)
 
 ---
 
