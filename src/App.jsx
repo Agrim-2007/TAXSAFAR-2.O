@@ -10,7 +10,6 @@ import WhatsAppFloat from './components/WhatsAppFloat/WhatsAppFloat';
 
 export default function App() {
   useLenis();
-
   return (
     <>
       <Navbar />
