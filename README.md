@@ -4,7 +4,7 @@
 
 ![TaxSafar 2.0 Preview](./TAXSAFAR-Preview.png)
 
----
+----
 
 ## 🏗️ Architecture Overview
 
